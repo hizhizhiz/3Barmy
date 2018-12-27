@@ -1,15 +1,58 @@
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: "OutrunFuture";
-  src: url(fonts/outrun_future/Outrunfuture.otf);
+  src: url(../fonts/outrun_future/Outrunfuture.otf);
 }
+* {
+  color: #fff;
+  font-family: "OutrunFuture";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../images/Brushes.png);
+  background-size: cover;
+  position: relative;
+}
+
 p {
+  color: #fff;
   font-family: "Montserrat-Regular";
   font-size: 14px;
   line-height: 36px;
+}
+
+.top {
+  background-image: url(../images/bg_top.png);
+  padding-top: 135px;
+}
+.top .menu {
+  display: flex;
+  font-size: 24px;
+  padding-bottom: 180px;
+  line-height: 30px;
+}
+.top .menu li {
+  padding-right: 60px;
+  list-style-type: none;
+}
+.top .menu li :hover {
+  background-image: url(../images/hover_menu.png);
+}
+.top .menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.top .logo {
+  padding-bottom: 100px;
+}
+.top button {
+  background-image: url(../images/button.png);
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

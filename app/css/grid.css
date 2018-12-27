@@ -48,6 +48,18 @@ html {
   }
 }
 
+/*@media (min-width: 1600px) {
+  .container {
+    max-width: 1572px;
+  }
+}*/
+
+@media (min-width: 2000px) {
+  .container {
+    max-width: 1572px;
+  }
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
