@@ -14,9 +14,8 @@
 }
 
 body {
-  background-image: url(../images/Brushes.png);
+  background-image: url(../images/BG.png);
   background-size: cover;
-  position: relative;
 }
 
 p {
@@ -24,6 +23,22 @@ p {
   font-family: "Montserrat-Regular";
   font-size: 14px;
   line-height: 36px;
+  letter-spacing: 0.025em;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.brushes {
+  position: absolute;
+  z-index: 4;
 }
 
 .top {
@@ -50,9 +65,87 @@ p {
 .top .logo {
   padding-bottom: 100px;
 }
-.top button {
+.top .watch-button {
+  background-color: transparent;
   background-image: url(../images/button.png);
   background-repeat: no-repeat;
+  border: none;
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  margin-bottom: 330px;
+  height: 55px;
+  width: 250px;
+}
+
+.about {
+  background-image: url(../images/bg_about.png);
+  padding-bottom: 200px;
+}
+.about h2 {
+  color: #95a7ff;
+  font-size: 24px;
+  line-height: 30px;
+}
+.about h1 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 30px;
+}
+.about .image {
+  padding-top: 30px;
+}
+.about .text {
+  padding-top: 165px;
+  margin-left: 100px;
+  height: 280px;
+  width: 270px;
+}
+.about .title {
+  padding-top: 45px;
+  padding-bottom: 75px;
+}
+
+.slider {
+  position: relative;
+  top: -150px;
+  height: 0;
+}
+.slider #slides {
+  display: flex;
+}
+.slider #slides img {
+  height: 295px;
+  width: 393px;
+}
+.slider #slides li {
+  list-style-type: none;
+}
+.slider #slides .active img {
+  border: 10px solid #ff3333;
+}
+
+.main-footer {
+  background-image: url(../images/bg_footer.png);
+  height: 905px;
+}
+.main-footer .join {
+  padding-top: 330px;
+  padding-bottom: 50px;
+}
+.main-footer .join-button {
+  background-color: transparent;
+  background-image: url(../images/button.png);
+  background-repeat: no-repeat;
+  border: none;
+  color: #ff4e3e;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  margin-bottom: 270px;
+  height: 55px;
+  width: 250px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,11 +9,8 @@
 
 body 
   background:
-    // color: #000000
-    image: url(../images/Brushes.png)
+    image: url(../images/BG.png)
     size: cover
-  position: relative
-  // z-index: -1
 
 p
   color: #fff
@@ -21,12 +18,23 @@ p
     family: "Montserrat-Regular"
     size: 14px
   line-height: 36px
-  // vertical-align: 25%
+  letter-spacing: 0.025em
+
+.container-fluid
+  padding: 0
+  margin: 0  
+
+.center
+  display: flex
+  justify-content: center
+
+.brushes
+  position: absolute
+  z-index: 4
 
 .top 
   background: 
     image: url(../images/bg_top.png)
-    // color: #000000  
   padding: 
     top: 135px
 
@@ -35,10 +43,8 @@ p
     font:
       size: 24px
     padding:
-        bottom: 180px
+      bottom: 180px
     line-height: 30px
-
-    ul
 
     li
       padding:
@@ -59,7 +65,97 @@ p
     padding: 
       bottom: 100px
 
-  button
+  .watch-button
     background:
+      color: transparent
       image: url(../images/button.png)
       repeat: no-repeat
+    border: none
+    color: black
+    font:
+      size: 18px
+    line-height: 30px
+    letter-spacing: 0.03em
+    margin: 
+      bottom: 330px
+    height: 55px
+    width: 250px
+
+.about
+  background:
+    image: url(../images/bg_about.png)
+  padding: 
+    bottom: 200px 
+
+  h2
+    color: #95a7ff
+    font:
+      size: 24px
+    line-height: 30px
+    
+  h1
+    color: #fff
+    font:
+      size: 60px
+    line-height: 30px
+
+  .image
+    padding: 
+      top: 30px
+
+  .text
+    padding:
+      top: 165px
+    margin:
+      left: 100px
+    height: 280px
+    width: 270px 
+
+  .title
+    padding: 
+      top: 45px
+      bottom: 75px 
+
+.slider
+  position: relative
+  top: -150px
+  height: 0
+    
+  #slides
+    display: flex
+
+  #slides img
+    height: 295px
+    width: 393px  
+
+  #slides li
+    list-style-type: none
+
+  #slides .active img
+    border: 10px solid #ff3333
+
+.main-footer
+  background:
+    image: url(../images/bg_footer.png)
+  height: 905px 
+
+  .join
+    padding:
+      top: 330px
+      bottom: 50px
+
+  .join-button
+    background:
+      color: transparent
+      image: url(../images/button.png)
+      repeat: no-repeat
+    border: none
+    color: #ff4e3e
+    font:
+      size: 18px
+    line-height: 30px
+    letter-spacing: 0.03em
+    margin: 
+      bottom: 270px
+    height: 55px
+    width: 250px
